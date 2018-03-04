@@ -56,14 +56,15 @@ def menu():
 		choices=[("DuckyPi", "Ataque via USB1."),
 			 ("Fake", "Fake game."),
 			 ("System", "Configuração do systema."),
-			 ("Dev", "Desenvolvimento 1."),
-			 ("Dev", "Desenvolvimento 2.")])
+			 ("Update", "Atualização via git.")])
 	#print ("OP: ", op)
 	#print ("TAG: ", tag)
 	if tag == 'DuckyPi':
 		duckypi()
 	elif tag == 'Dev':
 		menu.msgbox("Em desenvolvimento. =(")
+	elif tag == 'Update':
+		update()
 
 def check_modules():
 	alert = Dialog(dialog="dialog")
@@ -74,6 +75,8 @@ def check_modules():
 		os.system('sudo /home/pi/hackpick/tools/DuckyPi/hid.sh')
 		if os.path.exists('/sys/kernel/config/usb_gadget/g1/UDC'):
 			alert.msgbox("Iniciando com sucesso!")
+def update():
+	os.system('git -C /home/pi/hackpick/ pull origin master')
 
 def duckypi():
 	itens = os.listdir('/home/pi/hackpick/tools/DuckyPi/payloads/')
@@ -105,3 +108,4 @@ while True:
 		print("Botão pressionado: START e SELECT")
 		print("Desligando HackPIcK")
 		os.system("sudo shutdown -h now")
+
