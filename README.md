@@ -1,7 +1,7 @@
 ![alt text](logo.png)
 # HackPIcK
 Alpha 0.1
-
+https://github.com/Pupilo/hackpick/wiki
 
 ## Tools
 -rspiduck<br>
