@@ -1,6 +1,6 @@
 ![alt text](logo.png)
 # HackPIcK
-Alpha 0.1
+Alpha 0.1<br>
 https://github.com/Pupilo/hackpick/wiki
 
 ## Tools
