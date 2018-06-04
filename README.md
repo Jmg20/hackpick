@@ -1,4 +1,7 @@
-![alt text](logo.png)
+
+<h1> Tutorial Hackpick</h1>
+
+
 # HackPIcK
 Alpha 0.1<br>
 https://github.com/Pupilo/hackpick/wiki
